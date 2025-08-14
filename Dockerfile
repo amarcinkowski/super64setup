@@ -15,7 +15,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Krok 4: Pobierz, rozpakuj Kick Assembler i usuń plik archiwum
-RUN wget https://theweb.dk/KickAssembler/KickAss${KICKASS_VERSION}.zip -O /tmp/kickass.zip && \
+RUN wget http://theweb.dk/KickAssembler/KickAss.zip -O /tmp/kickass.zip && \
     unzip /tmp/kickass.zip -d ${KICKASS_HOME} && \
     rm /tmp/kickass.zip
 
